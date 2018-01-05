@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,6 +62,7 @@
                                     <outlet property="avatar" destination="fvU-YE-4XG" id="p93-sZ-wgh"/>
                                     <outlet property="descriptionLabel" destination="rRk-sk-oIT" id="qGx-PN-Idd"/>
                                     <outlet property="title" destination="B97-2j-r7R" id="pCg-ki-tpe"/>
+                                    <segue destination="vTR-OG-Gta" kind="show" identifier="goToDetails" id="m6u-Ri-0o8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,6 +76,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWk-de-5np" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="408.80000000000001" y="-18.440779610194905"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="MIQ-J1-DSr">
+            <objects>
+                <viewController id="vTR-OG-Gta" customClass="DetailsViewController" customModule="MeusFilmes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o44-iD-F7g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dy7-jA-qL3">
+                                <rect key="frame" x="16" y="82" width="343" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvZ-OV-zlj">
+                                <rect key="frame" x="16" y="443" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjV-Bv-oo2">
+                                <rect key="frame" x="16" y="491" width="343" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QbG-Vj-bSV"/>
+                    </view>
+                    <connections>
+                        <outlet property="des" destination="FjV-Bv-oo2" id="PWD-b7-XQL"/>
+                        <outlet property="img" destination="dy7-jA-qL3" id="Xbc-Lr-S3E"/>
+                        <outlet property="tit" destination="LvZ-OV-zlj" id="NOS-cd-ls1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBg-j6-5c1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="-18.440779610194905"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qhp-Vl-99s">

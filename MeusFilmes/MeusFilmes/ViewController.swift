@@ -34,6 +34,17 @@ class ViewController: UITableViewController {
         return filmes.count
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToDetails" {
+            if let indexPath = tableView.indexPathForSelectedRow?.item {
+                
+                let dest = segue.destination as! DetailsViewController
+                dest.filme = filmes[indexPath]
+            }
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! CustomTableViewCell

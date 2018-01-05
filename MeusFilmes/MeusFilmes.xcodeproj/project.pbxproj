@@ -14,6 +14,7 @@
 		921FA5CE1FFEDD9A00982014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921FA5CC1FFEDD9A00982014 /* LaunchScreen.storyboard */; };
 		921FA5D61FFEDF6800982014 /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FA5D51FFEDF6800982014 /* Filme.swift */; };
 		921FA5D81FFEF6A300982014 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FA5D71FFEF6A300982014 /* CustomTableViewCell.swift */; };
+		921FA5DA1FFF2E9B00982014 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FA5D91FFF2E9B00982014 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		921FA5CF1FFEDD9A00982014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		921FA5D51FFEDF6800982014 /* Filme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
 		921FA5D71FFEF6A300982014 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		921FA5D91FFF2E9B00982014 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				921FA5CF1FFEDD9A00982014 /* Info.plist */,
 				921FA5D51FFEDF6800982014 /* Filme.swift */,
 				921FA5D71FFEF6A300982014 /* CustomTableViewCell.swift */,
+				921FA5D91FFF2E9B00982014 /* DetailsViewController.swift */,
 			);
 			path = MeusFilmes;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				921FA5D61FFEDF6800982014 /* Filme.swift in Sources */,
 				921FA5D81FFEF6A300982014 /* CustomTableViewCell.swift in Sources */,
 				921FA5C41FFEDD9A00982014 /* AppDelegate.swift in Sources */,
+				921FA5DA1FFF2E9B00982014 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
